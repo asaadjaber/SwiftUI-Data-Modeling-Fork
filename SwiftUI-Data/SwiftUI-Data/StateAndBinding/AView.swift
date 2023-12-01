@@ -16,6 +16,7 @@ struct AView: View {
             Toggle(isOn: $isOn) {
                 Text("SwitchA")
             }
+            ChildView(isOn: isOn)
         }.listStyle(.inset)
     }
 }
