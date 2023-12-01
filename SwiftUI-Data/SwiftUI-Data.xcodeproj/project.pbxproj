@@ -17,6 +17,8 @@
 		4E28DF252B19DF9100B1BFB2 /* AView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E28DF242B19DF9100B1BFB2 /* AView.swift */; };
 		4E28DF282B19E51800B1BFB2 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 4E28DF272B19E51800B1BFB2 /* README.md */; };
 		4E28DF2A2B19EAB000B1BFB2 /* ChildView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E28DF292B19EAB000B1BFB2 /* ChildView.swift */; };
+		4E28DF2C2B19FD7A00B1BFB2 /* BView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E28DF2B2B19FD7A00B1BFB2 /* BView.swift */; };
+		4E28DF2E2B1A01FA00B1BFB2 /* SupportingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E28DF2D2B1A01FA00B1BFB2 /* SupportingView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +52,8 @@
 		4E28DF242B19DF9100B1BFB2 /* AView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AView.swift; sourceTree = "<group>"; };
 		4E28DF272B19E51800B1BFB2 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		4E28DF292B19EAB000B1BFB2 /* ChildView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChildView.swift; sourceTree = "<group>"; };
+		4E28DF2B2B19FD7A00B1BFB2 /* BView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BView.swift; sourceTree = "<group>"; };
+		4E28DF2D2B1A01FA00B1BFB2 /* SupportingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SupportingView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,10 +142,28 @@
 		4E28DF232B19DF7600B1BFB2 /* StateAndBinding */ = {
 			isa = PBXGroup;
 			children = (
-				4E28DF242B19DF9100B1BFB2 /* AView.swift */,
-				4E28DF292B19EAB000B1BFB2 /* ChildView.swift */,
+				4E28DF2F2B1A04E000B1BFB2 /* ParentViews */,
+				4E28DF302B1A04EE00B1BFB2 /* ChildViews */,
 			);
 			path = StateAndBinding;
+			sourceTree = "<group>";
+		};
+		4E28DF2F2B1A04E000B1BFB2 /* ParentViews */ = {
+			isa = PBXGroup;
+			children = (
+				4E28DF242B19DF9100B1BFB2 /* AView.swift */,
+				4E28DF2B2B19FD7A00B1BFB2 /* BView.swift */,
+			);
+			path = ParentViews;
+			sourceTree = "<group>";
+		};
+		4E28DF302B1A04EE00B1BFB2 /* ChildViews */ = {
+			isa = PBXGroup;
+			children = (
+				4E28DF292B19EAB000B1BFB2 /* ChildView.swift */,
+				4E28DF2D2B1A01FA00B1BFB2 /* SupportingView.swift */,
+			);
+			path = ChildViews;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -276,9 +298,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				4E28DF252B19DF9100B1BFB2 /* AView.swift in Sources */,
+				4E28DF2C2B19FD7A00B1BFB2 /* BView.swift in Sources */,
 				4E28DEFC2B19DF2800B1BFB2 /* ContentView.swift in Sources */,
 				4E28DEFA2B19DF2800B1BFB2 /* SwiftUI_DataApp.swift in Sources */,
 				4E28DF2A2B19EAB000B1BFB2 /* ChildView.swift in Sources */,
+				4E28DF2E2B1A01FA00B1BFB2 /* SupportingView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
