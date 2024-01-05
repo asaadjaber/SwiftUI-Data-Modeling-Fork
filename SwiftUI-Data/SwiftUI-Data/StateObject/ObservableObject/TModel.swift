@@ -11,12 +11,15 @@ import SwiftUI
 class TModel: ObservableObject {
 
     var address: String
+    var vehicleVolumeValue: Int
+    
     @Published var vehicleVolume: VehicleVolume?
     
     enum VehicleVolume { case light, moderate, heavy }
     
     init(address: String, vehicleVolume: Int) {
         self.address = address
+        self.vehicleVolumeValue = vehicleVolume
         self.vehicleVolume = lookupVehicleVolumeCase(val: vehicleVolume)
     }
     
@@ -28,6 +31,15 @@ class TModel: ObservableObject {
         } else {
             return .heavy
         }
+    }
+    
+    func projectVehicleVolume() {
+        if vehicleVolumeValue < 21500 {
+            vehicleVolumeValue += 13000
+        } else {
+            vehicleVolumeValue = 700
+        }
+        vehicleVolume = lookupVehicleVolumeCase(val: vehicleVolumeValue)
     }
 }
 

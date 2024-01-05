@@ -25,7 +25,14 @@ struct SView: View {
                 }.padding([.leading, .trailing], 50)
             }
             StreetCarVolumeLevelView(columns: columns, traffic: traffic)
+            Button(action: projectVolumeLevel, label: {
+                Text("Project")
+            }).buttonStyle(.bordered)
         }
+    }
+    
+    func projectVolumeLevel() {
+        traffic.projectVehicleVolume()
     }
 }
 
