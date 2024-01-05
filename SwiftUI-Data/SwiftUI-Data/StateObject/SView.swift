@@ -24,27 +24,7 @@ struct SView: View {
                     Text("Traffic Level")
                 }.padding([.leading, .trailing], 50)
             }
-            LazyVGrid(columns: columns) {
-                Text(traffic.address)
-                switch traffic.vehicleVolume {
-                case .light:
-                    Ellipse().frame(width: 30, height: 30, alignment: .center)
-                case .moderate:
-                    HStack {
-                        ForEach(1..<3) { _ in
-                            Ellipse().frame(width: 30, height: 30, alignment: .center).tint(.gray)
-                        }
-                    }
-                case .heavy:
-                    HStack {
-                        ForEach(1..<4) { _ in
-                            Ellipse().frame(width: 30, height: 30, alignment: .center)
-                        }
-                    }
-                case .none:
-                    AnyView(_fromValue: Int())
-                }
-            }.padding([.leading, .trailing], 30)
+            StreetCarVolumeLevelView(columns: columns, traffic: traffic)
         }
     }
 }
@@ -52,3 +32,4 @@ struct SView: View {
 #Preview {
     SView(traffic: TModel(address: "125 East", vehicleVolume: 700))
 }
+

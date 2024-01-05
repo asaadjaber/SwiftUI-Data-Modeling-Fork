@@ -11,7 +11,7 @@ import SwiftUI
 class TModel: ObservableObject {
 
     var address: String
-    var vehicleVolume: VehicleVolume?
+    @Published var vehicleVolume: VehicleVolume?
     
     enum VehicleVolume { case light, moderate, heavy }
     

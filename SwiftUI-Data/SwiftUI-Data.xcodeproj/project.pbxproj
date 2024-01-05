@@ -21,6 +21,7 @@
 		4E28DF2E2B1A01FA00B1BFB2 /* SupportingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E28DF2D2B1A01FA00B1BFB2 /* SupportingView.swift */; };
 		4E6858F22B482BA400C315E5 /* SView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E6858F12B482BA400C315E5 /* SView.swift */; };
 		4E6858F52B482C3C00C315E5 /* TModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E6858F42B482C3C00C315E5 /* TModel.swift */; };
+		4E6858F72B48444100C315E5 /* StreetCarVolumeLevelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E6858F62B48444100C315E5 /* StreetCarVolumeLevelView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +59,7 @@
 		4E28DF2D2B1A01FA00B1BFB2 /* SupportingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SupportingView.swift; sourceTree = "<group>"; };
 		4E6858F12B482BA400C315E5 /* SView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SView.swift; sourceTree = "<group>"; };
 		4E6858F42B482C3C00C315E5 /* TModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TModel.swift; sourceTree = "<group>"; };
+		4E6858F62B48444100C315E5 /* StreetCarVolumeLevelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StreetCarVolumeLevelView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -175,6 +177,7 @@
 			isa = PBXGroup;
 			children = (
 				4E6858F12B482BA400C315E5 /* SView.swift */,
+				4E6858F62B48444100C315E5 /* StreetCarVolumeLevelView.swift */,
 				4E6858F32B482C2900C315E5 /* ObservableObject */,
 			);
 			path = StateObject;
@@ -324,6 +327,7 @@
 				4E28DEFC2B19DF2800B1BFB2 /* ContentView.swift in Sources */,
 				4E6858F22B482BA400C315E5 /* SView.swift in Sources */,
 				4E28DEFA2B19DF2800B1BFB2 /* SwiftUI_DataApp.swift in Sources */,
+				4E6858F72B48444100C315E5 /* StreetCarVolumeLevelView.swift in Sources */,
 				4E28DF2A2B19EAB000B1BFB2 /* ChildView.swift in Sources */,
 				4E6858F52B482C3C00C315E5 /* TModel.swift in Sources */,
 				4E28DF2E2B1A01FA00B1BFB2 /* SupportingView.swift in Sources */,
