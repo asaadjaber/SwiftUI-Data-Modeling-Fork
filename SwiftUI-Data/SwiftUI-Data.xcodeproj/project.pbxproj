@@ -22,6 +22,8 @@
 		4E6858F22B482BA400C315E5 /* SView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E6858F12B482BA400C315E5 /* SView.swift */; };
 		4E6858F52B482C3C00C315E5 /* TModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E6858F42B482C3C00C315E5 /* TModel.swift */; };
 		4E6858F72B48444100C315E5 /* StreetCarVolumeLevelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E6858F62B48444100C315E5 /* StreetCarVolumeLevelView.swift */; };
+		4E6858FA2B484FDA00C315E5 /* EView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E6858F92B484FDA00C315E5 /* EView.swift */; };
+		4E6858FC2B48620200C315E5 /* Wallet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E6858FB2B48620200C315E5 /* Wallet.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +62,8 @@
 		4E6858F12B482BA400C315E5 /* SView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SView.swift; sourceTree = "<group>"; };
 		4E6858F42B482C3C00C315E5 /* TModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TModel.swift; sourceTree = "<group>"; };
 		4E6858F62B48444100C315E5 /* StreetCarVolumeLevelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StreetCarVolumeLevelView.swift; sourceTree = "<group>"; };
+		4E6858F92B484FDA00C315E5 /* EView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EView.swift; sourceTree = "<group>"; };
+		4E6858FB2B48620200C315E5 /* Wallet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wallet.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,10 +115,11 @@
 		4E28DEF82B19DF2800B1BFB2 /* SwiftUI-Data */ = {
 			isa = PBXGroup;
 			children = (
+				4E28DEFB2B19DF2800B1BFB2 /* ContentView.swift */,
+				4E6858F82B484F4E00C315E5 /* Environment */,
 				4E6858F02B482B6B00C315E5 /* StateObject */,
 				4E28DF232B19DF7600B1BFB2 /* StateAndBinding */,
 				4E28DEF92B19DF2800B1BFB2 /* SwiftUI_DataApp.swift */,
-				4E28DEFB2B19DF2800B1BFB2 /* ContentView.swift */,
 				4E28DEFD2B19DF2900B1BFB2 /* Assets.xcassets */,
 				4E28DEFF2B19DF2900B1BFB2 /* Preview Content */,
 			);
@@ -189,6 +194,15 @@
 				4E6858F42B482C3C00C315E5 /* TModel.swift */,
 			);
 			path = ObservableObject;
+			sourceTree = "<group>";
+		};
+		4E6858F82B484F4E00C315E5 /* Environment */ = {
+			isa = PBXGroup;
+			children = (
+				4E6858F92B484FDA00C315E5 /* EView.swift */,
+				4E6858FB2B48620200C315E5 /* Wallet.swift */,
+			);
+			path = Environment;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -325,11 +339,13 @@
 				4E28DF252B19DF9100B1BFB2 /* AView.swift in Sources */,
 				4E28DF2C2B19FD7A00B1BFB2 /* BView.swift in Sources */,
 				4E28DEFC2B19DF2800B1BFB2 /* ContentView.swift in Sources */,
+				4E6858FC2B48620200C315E5 /* Wallet.swift in Sources */,
 				4E6858F22B482BA400C315E5 /* SView.swift in Sources */,
 				4E28DEFA2B19DF2800B1BFB2 /* SwiftUI_DataApp.swift in Sources */,
 				4E6858F72B48444100C315E5 /* StreetCarVolumeLevelView.swift in Sources */,
 				4E28DF2A2B19EAB000B1BFB2 /* ChildView.swift in Sources */,
 				4E6858F52B482C3C00C315E5 /* TModel.swift in Sources */,
+				4E6858FA2B484FDA00C315E5 /* EView.swift in Sources */,
 				4E28DF2E2B1A01FA00B1BFB2 /* SupportingView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -494,6 +510,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"SwiftUI-Data/Preview Content\"";
+				DEVELOPMENT_TEAM = X5QPQ583EG;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -522,6 +539,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"SwiftUI-Data/Preview Content\"";
+				DEVELOPMENT_TEAM = X5QPQ583EG;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
